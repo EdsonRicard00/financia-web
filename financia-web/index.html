@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>financIA | Inteligência de Mercado</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="bg-glows">
+        <div class="glow-blob purple"></div>
+        <div class="glow-blob blue"></div>
+    </div>
+
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <div class="logo">financ<span class="highlight-blue">IA</span></div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Início</a></li>
+                <li><a href="#dashboard">Terminal IA</a></li>
+                <li><a href="#insights">Insights</a></li>
+                <li><a href="#news">Notícias</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+            </ul>
+            <a href="#dashboard" class="btn-login">Acessar Terminal <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="badge-new">✨ Nova Versão 2.0</div>
+            <h1>Invista com a <br>Inteligência do <span class="text-gradient">Futuro</span></h1>
+            <p class="hero-desc">
+                A plataforma que funde <strong>Big Data</strong> e <strong>Inteligência Artificial</strong> para ler o mercado antes de você. Tome decisões baseadas em algoritmos, não em emoções.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToDash()">Testar Agora</button>
+                <button class="btn-secondary">Saber Mais</button>
+            </div>
+            
+            <div class="stats-row">
+                <div class="stat-item">
+                    <span class="stat-num">500+</span>
+                    <span class="stat-label">Ativos Monitorados</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">94%</span>
+                    <span class="stat-label">Precisão Histórica</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">24/7</span>
+                    <span class="stat-label">Análise em Tempo Real</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-visual">
+            <div class="glass-card float-card">
+                <div class="ai-icon-box"><i class="fas fa-robot"></i></div>
+                <h3>Analisando NASDAQ...</h3>
+                <div class="fake-graph">
+                    <div class="bar" style="height: 40%"></div>
+                    <div class="bar" style="height: 70%"></div>
+                    <div class="bar" style="height: 50%"></div>
+                    <div class="bar active" style="height: 90%"></div>
+                </div>
+                <div class="status-pill">Conexão Neural: <span class="neon-green">ATIVA</span></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="ticker-wrap">
+        <div class="ticker-tag">MERCADO GLOBAL</div>
+        <div id="top-ticker-bar" class="ticker-scroll">
+            <span class="loading-msg"><i class="fas fa-sync fa-spin"></i> Carregando Índices...</span>
+        </div>
+    </div>
+
+    <section id="dashboard" class="dashboard-section">
+        <div class="section-header">
+            <h2>Terminal de Análise <span class="highlight-purple">Deep Learning</span></h2>
+            <p>Selecione um ativo para visualizar a predição da nossa IA.</p>
+        </div>
+
+        <div class="dashboard-grid">
+            
+            <aside class="glass-panel sidebar">
+                <div class="panel-header"><i class="fas fa-sliders-h"></i> Parâmetros</div>
+                
+                <div class="input-group">
+                    <label>Ativo Financeiro</label>
+                    <div class="select-wrapper">
+                        <select id="asset-select" class="glass-select">
+                            <option>Carregando Base de Dados...</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Horizonte de Análise</label>
+                    <select id="period-select" class="glass-select">
+                        <option value="1 Mês">Curto Prazo (1 Mês)</option>
+                        <option value="6 Meses">Médio Prazo (6 Meses)</option>
+                        <option value="1 Ano" selected>Longo Prazo (1 Ano)</option>
+                        <option value="5 Anos">Histórico (5 Anos)</option>
+                        <option value="max">Super Longo Prazo (Máx/40 Anos)</option>
+                    </select>
+                </div>
+
+                <button onclick="updateDashboard()" class="btn-analyze">
+                    <i class="fas fa-microchip"></i> PROCESSAR DADOS
+                </button>
+
+                <div class="live-price-box">
+                    <span class="lp-label">Preço Atual</span>
+                    <h2 id="display-price">---</h2>
+                    <div id="display-var" class="lp-tag">0.00%</div>
+                </div>
+            </aside>
+
+            <main class="glass-panel main-chart" style="overflow-y: auto; max-height: 800px;">
+    
+    <div class="chart-top">
+        <h3><i class="fas fa-chart-area"></i> Análise Técnica Profunda</h3>
+        <div class="live-indicator"><div class="dot"></div> Ao Vivo</div>
+    </div>
+
+    <div class="chart-wrapper">
+        <h4 class="chart-label">Evolução de Preço (R$)</h4>
+        <div id="chart-price" class="chart-box-small"></div>
+    </div>
+
+    <div class="chart-wrapper">
+        <h4 class="chart-label">Volume de Negociação</h4>
+        <div id="chart-volume" class="chart-box-small"></div>
+    </div>
+
+    <div class="chart-wrapper">
+        <h4 class="chart-label">Rentabilidade Percentual (%)</h4>
+        <div id="chart-percent" class="chart-box-small"></div>
+    </div>
+
+</main>
+
+            <aside class="glass-panel ai-sidebar">
+                <div class="ai-badge">⚡ Veredito financIA</div>
+                
+                <div class="verdict-box">
+                    <h1 id="ai-verdict">AGUARDANDO</h1>
+                    <div class="confidence-wrapper">
+                        <span>Confiança do Modelo</span>
+                        <div class="progress-bg"><div id="confidence-bar" class="progress-fill"></div></div>
+                    </div>
+                </div>
+
+                <div class="news-feed-mini">
+                    <h4><i class="far fa-newspaper"></i> Feed de Notícias</h4>
+                    <div class="news-item-mini">
+                        <a href="#">⚠️ Tecnologia impulsiona altas históricas na NASDAQ.</a>
+                    </div>
+                    <div class="news-item-mini">
+                        <a href="#">📊 FED mantém taxas; mercado reage com volatilidade.</a>
+                    </div>
+                    <div class="news-item-mini">
+                        <a href="#">🛢️ Commodities em alta: Ouro atinge novo recorde.</a>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+
+    <section id="insights" class="cards-section">
+        <h3>Destaques do Dia</h3>
+        <div class="cards-grid">
+            <div class="glass-card-mini">
+                <div class="mc-head">NVIDIA (NVDA)</div>
+                <div class="mc-val text-green">Alta Demanda</div>
+                <p>Setor de IA continua aquecido.</p>
+            </div>
+            <div class="glass-card-mini">
+                <div class="mc-head">BITCOIN (BTC)</div>
+                <div class="mc-val text-green">Acumulação</div>
+                <p>Baleias comprando na baixa.</p>
+            </div>
+            <div class="glass-card-mini">
+                <div class="mc-head">PETROBRAS (PETR4)</div>
+                <div class="mc-val text-red">Volatilidade</div>
+                <p>Incerteza política afeta o ativo.</p>
+            </div>
+            <div class="glass-card-mini">
+                <div class="mc-head">DÓLAR (USD)</div>
+                <div class="mc-val text-neutral">Lateralizado</div>
+                <p>Aguardando dados de inflação.</p>
+            </div>
+        </div>
+    </section>
+<section id="about" class="about-section">
+        <div class="about-container glass-panel">
+            <div class="about-header">
+                <span class="vision-tag">NOSSA VISÃO</span>
+                <h2>Não construímos apenas código.<br>Construímos <span class="text-gradient">Liberdade.</span></h2>
+            </div>
+            
+            <div class="about-content">
+                <p>
+                    A <strong>financIA</strong> não nasceu em uma sala de reuniões convencional. Ela nasceu de uma inquietação silenciosa: por que o mercado financeiro, a maior máquina de geração de riqueza da história, ainda parecia uma "caixa preta" para a nova geração?
+                </p>
+                <p>
+                    Acreditamos que investir não é sobre gráficos complicados, é sobre <strong>desenhar o próprio destino</strong>. Nossa missão é quebrar as barreiras de entrada e fundir a educação financeira com o poder computacional de ponta.
+                </p>
+                
+                <div class="quote-box">
+                    "A tecnologia só faz sentido quando ela empodera as pessoas a realizarem o impossível."
+                </div>
+
+                <div class="team-signature">
+                    <p>
+                        Liderados pelo visionário e Lead Developer <strong>Edson Ricardo</strong>, somos uma elite de <strong>20 engenheiros e cientistas de dados</strong> obcecados por uma única coisa: entregar a melhor ferramenta de análise do mundo nas suas mãos.
+                    </p>
+                    <div class="signature-line"></div>
+                    <span class="role-label">The financIA Team</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="logo">financ<span class="highlight-blue">IA</span></div>
+            <p>&copy; 2026 financIA Inc. Todos os direitos reservados.</p>
+        </div>
+        
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function scrollToDash() {
+            document.getElementById('dashboard').scrollIntoView({behavior: 'smooth'});
+        }
+    </script>
+</body>
+</html>
