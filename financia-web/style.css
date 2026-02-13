@@ -1,10 +1,10 @@
 /* --- 1. VARIÁVEIS CYBERPUNK/GLASS --- */
 :root {
-    --bg-dark: #0a0e17;
-    --glass-bg: rgba(255, 255, 255, 0.03);
-    --glass-border: rgba(255, 255, 255, 0.08);
-    --primary-blue: #00f2ff;
-    --primary-purple: #7000ff;
+    --bg-dark: #080b14;
+    --glass-bg: rgba(255, 255, 255, 0.06);
+    --glass-border: rgba(255, 255, 255, 0.16);
+    --primary-blue: #47dbff;
+    --primary-purple: #8f5bff;
     --text-main: #ffffff;
     --text-muted: #a0a0a0;
     --success: #00ff88;
@@ -15,7 +15,10 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-    background-color: var(--bg-dark);
+    background:
+        radial-gradient(circle at 15% 20%, rgba(71, 219, 255, 0.18), transparent 35%),
+        radial-gradient(circle at 80% 10%, rgba(143, 91, 255, 0.2), transparent 32%),
+        var(--bg-dark);
     color: var(--text-main);
     font-family: var(--font-main);
     overflow-x: hidden;
@@ -145,7 +148,7 @@ h1 { font-size: 3.5rem; line-height: 1.2; margin-bottom: 20px; }
 
 /* Glass Panels */
 .glass-panel {
-    background: var(--glass-bg); backdrop-filter: blur(10px);
+    background: linear-gradient(135deg, rgba(255,255,255,0.09), rgba(255,255,255,0.02)); backdrop-filter: blur(14px);
     border: 1px solid var(--glass-border); border-radius: 16px; padding: 25px;
 }
 .panel-header { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid var(--glass-border); padding-bottom: 10px; }
@@ -165,6 +168,7 @@ h1 { font-size: 3.5rem; line-height: 1.2; margin-bottom: 20px; }
     box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
 }
 .btn-analyze:hover { box-shadow: 0 0 25px rgba(0, 242, 255, 0.4); }
+.btn-analyze:disabled { opacity: 0.7; cursor: wait; }
 
 .live-price-box { margin-top: 40px; text-align: center; background: rgba(0,0,0,0.2); padding: 20px; border-radius: 12px; }
 .lp-label { font-size: 0.8rem; color: #aaa; }
@@ -257,7 +261,7 @@ footer { text-align: center; padding: 40px; border-top: 1px solid var(--glass-bo
 .about-container {
     text-align: center;
     padding: 60px 40px;
-    background: linear-gradient(180deg, rgba(20,20,30,0.8) 0%, rgba(10,10,20,0.95) 100%);
+    background: linear-gradient(180deg, rgba(22,22,38,0.78) 0%, rgba(7,9,17,0.96) 100%);
 }
 
 .vision-tag {
