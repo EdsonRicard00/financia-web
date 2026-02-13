@@ -3,12 +3,15 @@ from __future__ import annotations
 import logging
 import os
 from functools import lru_cache
+from pathlib import Path
 from typing import Literal
 
 import uvicorn
 import yfinance as yf
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 logger = logging.getLogger("financia.api")
@@ -19,6 +22,8 @@ app = FastAPI(
     version="2.0.0",
     description="API de mercado com dados em tempo real para dashboard glassmorphism.",
 )
+
+BASE_DIR = Path(__file__).resolve().parent
 
 # Segurança flexível para dev/prod.
 allowed_origins = os.getenv("ALLOWED_ORIGINS", "*").split(",")
@@ -91,8 +96,8 @@ def _sentimento_from_variacao(var_pct: float) -> tuple[str, str, int]:
 
 
 @app.get("/")
-def healthcheck() -> dict[str, str]:
-    return {"status": "ok", "service": "financIA API"}
+def ler_index() -> FileResponse:
+    return FileResponse(BASE_DIR / "index.html")
 
 
 @app.get("/lista-ativos", response_model=list[str])
@@ -178,6 +183,9 @@ def analise_completa(nome_ativo: str, periodo: str) -> FullAnalysisResponse:
         precos=[float(v) for v in closes.tolist()],
         volumes=[int(v) for v in hist["Volume"].fillna(0).astype(int).tolist()],
     )
+
+
+app.mount("/", StaticFiles(directory=BASE_DIR, html=True), name="static")
 
 
 if __name__ == "__main__":
