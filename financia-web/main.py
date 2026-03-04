@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import yfinance as yf
 import uvicorn
 
+
 app = FastAPI()
 
 # CONFIGURAÇÃO DE SEGURANÇA (Liberando conexão do navegador)
