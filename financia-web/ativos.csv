@@ -1,0 +1,128 @@
+ticker,name,display,country,exchange,currency,type
+NVDA,NVIDIA Corporation,🇺🇸 NVIDIA,US,NASDAQ,USD,Ação
+AAPL,Apple Inc.,🇺🇸 Apple,US,NASDAQ,USD,Ação
+MSFT,Microsoft Corp.,🇺🇸 Microsoft,US,NASDAQ,USD,Ação
+AMZN,Amazon.com Inc.,🇺🇸 Amazon,US,NASDAQ,USD,Ação
+GOOGL,Alphabet Inc.,🇺🇸 Google,US,NASDAQ,USD,Ação
+META,Meta Platforms Inc.,🇺🇸 Meta,US,NASDAQ,USD,Ação
+TSLA,Tesla Inc.,🇺🇸 Tesla,US,NASDAQ,USD,Ação
+BRK-B,Berkshire Hathaway,🇺🇸 Berkshire,US,NYSE,USD,Ação
+TSM,Taiwan Semiconductor,🇹🇼 TSMC,TW,NYSE,USD,Ação
+AVGO,Broadcom Inc.,🇺🇸 Broadcom,US,NASDAQ,USD,Ação
+V,Visa Inc.,🇺🇸 Visa,US,NYSE,USD,Ação
+JPM,JPMorgan Chase,🇺🇸 JPMorgan,US,NYSE,USD,Ação
+WMT,Walmart Inc.,🇺🇸 Walmart,US,NYSE,USD,Ação
+MA,Mastercard Inc.,🇺🇸 Mastercard,US,NYSE,USD,Ação
+PG,Procter & Gamble,🇺🇸 P&G,US,NYSE,USD,Ação
+JNJ,Johnson & Johnson,🇺🇸 J&J,US,NYSE,USD,Ação
+XOM,Exxon Mobil,🇺🇸 Exxon,US,NYSE,USD,Ação
+HD,Home Depot,🇺🇸 Home Depot,US,NYSE,USD,Ação
+CVX,Chevron Corp.,🇺🇸 Chevron,US,NYSE,USD,Ação
+MRK,Merck & Co.,🇺🇸 Merck,US,NYSE,USD,Ação
+KO,Coca-Cola Co.,🇺🇸 Coca-Cola,US,NYSE,USD,Ação
+PEP,PepsiCo Inc.,🇺🇸 PepsiCo,US,NASDAQ,USD,Ação
+ABBV,AbbVie Inc.,🇺🇸 AbbVie,US,NYSE,USD,Ação
+BAC,Bank of America,🇺🇸 Bank of America,US,NYSE,USD,Ação
+COST,Costco Wholesale,🇺🇸 Costco,US,NASDAQ,USD,Ação
+MCD,McDonald's Corp.,🇺🇸 McDonald's,US,NYSE,USD,Ação
+CRM,Salesforce Inc.,🇺🇸 Salesforce,US,NYSE,USD,Ação
+CSCO,Cisco Systems,🇺🇸 Cisco,US,NASDAQ,USD,Ação
+AMD,Advanced Micro Devices,🇺🇸 AMD,US,NASDAQ,USD,Ação
+TMO,Thermo Fisher,🇺🇸 Thermo Fisher,US,NYSE,USD,Ação
+WFC,Wells Fargo,🇺🇸 Wells Fargo,US,NYSE,USD,Ação
+DIS,Walt Disney Co.,🇺🇸 Disney,US,NYSE,USD,Ação
+PFE,Pfizer Inc.,🇺🇸 Pfizer,US,NYSE,USD,Ação
+NKE,NIKE Inc.,🇺🇸 Nike,US,NYSE,USD,Ação
+INTC,Intel Corp.,🇺🇸 Intel,US,NASDAQ,USD,Ação
+BA,Boeing Co.,🇺🇸 Boeing,US,NYSE,USD,Ação
+IBM,International Business Machines,🇺🇸 IBM,US,NYSE,USD,Ação
+CAT,Caterpillar Inc.,🇺🇸 Caterpillar,US,NYSE,USD,Ação
+UBER,Uber Technologies,🇺🇸 Uber,US,NYSE,USD,Ação
+NFLX,Netflix Inc.,🇺🇸 Netflix,US,NASDAQ,USD,Ação
+ORCL,Oracle Corp.,🇺🇸 Oracle,US,NYSE,USD,Ação
+QCOM,Qualcomm Inc.,🇺🇸 Qualcomm,US,NASDAQ,USD,Ação
+SBUX,Starbucks Corp.,🇺🇸 Starbucks,US,NASDAQ,USD,Ação
+MMM,3M Company,🇺🇸 3M,US,NYSE,USD,Ação
+F,Ford Motor Co.,🇺🇸 Ford,US,NYSE,USD,Ação
+GM,General Motors,🇺🇸 GM,US,NYSE,USD,Ação
+PETR4.SA,Petrobras PN,🇧🇷 Petrobras PN,BR,B3,BRL,Ação
+PETR3.SA,Petrobras ON,🇧🇷 Petrobras ON,BR,B3,BRL,Ação
+VALE3.SA,Vale S.A.,🇧🇷 Vale,BR,B3,BRL,Ação
+ITUB4.SA,Itaú Unibanco,🇧🇷 Itaú,BR,B3,BRL,Ação
+BBAS3.SA,Banco do Brasil,🇧🇷 Banco do Brasil,BR,B3,BRL,Ação
+BBDC4.SA,Bradesco PN,🇧🇷 Bradesco PN,BR,B3,BRL,Ação
+BBDC3.SA,Bradesco ON,🇧🇷 Bradesco ON,BR,B3,BRL,Ação
+WEGE3.SA,WEG S.A.,🇧🇷 Weg,BR,B3,BRL,Ação
+ABEV3.SA,Ambev S.A.,🇧🇷 Ambev,BR,B3,BRL,Ação
+RENT3.SA,Localiza,🇧🇷 Localiza,BR,B3,BRL,Ação
+SUZB3.SA,Suzano S.A.,🇧🇷 Suzano,BR,B3,BRL,Ação
+ELET3.SA,Eletrobras ON,🇧🇷 Eletrobras ON,BR,B3,BRL,Ação
+ELET6.SA,Eletrobras PN,🇧🇷 Eletrobras PN,BR,B3,BRL,Ação
+BPAC11.SA,BTG Pactual,🇧🇷 BTG Pactual,BR,B3,BRL,Ação
+EQTL3.SA,Equatorial Energia,🇧🇷 Equatorial,BR,B3,BRL,Ação
+RADL3.SA,Raia Drogasil,🇧🇷 Raia Drogasil,BR,B3,BRL,Ação
+PRIO3.SA,Prio S.A.,🇧🇷 Prio,BR,B3,BRL,Ação
+LREN3.SA,Lojas Renner,🇧🇷 Lojas Renner,BR,B3,BRL,Ação
+JBSS3.SA,JBS S.A.,🇧🇷 JBS,BR,B3,BRL,Ação
+B3SA3.SA,B3 S.A.,🇧🇷 B3,BR,B3,BRL,Ação
+ITSA4.SA,Itaúsa,🇧🇷 Itaúsa,BR,B3,BRL,Ação
+BBSE3.SA,BB Seguridade,🇧🇷 BB Seguridade,BR,B3,BRL,Ação
+VIVT3.SA,Telefônica Brasil,🇧🇷 Vivo,BR,B3,BRL,Ação
+HAPV3.SA,Hapvida,🇧🇷 Hapvida,BR,B3,BRL,Ação
+SANB11.SA,Santander BR,🇧🇷 Santander,BR,B3,BRL,Ação
+TIMS3.SA,TIM S.A.,🇧🇷 TIM,BR,B3,BRL,Ação
+KLBN11.SA,Klabin,🇧🇷 Klabin,BR,B3,BRL,Ação
+GGBR4.SA,Gerdau PN,🇧🇷 Gerdau,BR,B3,BRL,Ação
+CSNA3.SA,CSN,🇧🇷 CSN,BR,B3,BRL,Ação
+CMIG4.SA,Cemig PN,🇧🇷 Cemig,BR,B3,BRL,Ação
+MGLU3.SA,Magazine Luiza,🇧🇷 Magalu,BR,B3,BRL,Ação
+CPLE6.SA,Copel PN,🇧🇷 Copel,BR,B3,BRL,Ação
+ENEV3.SA,Eneva,🇧🇷 Eneva,BR,B3,BRL,Ação
+EGIE3.SA,Engie Brasil,🇧🇷 Engie,BR,B3,BRL,Ação
+CCRO3.SA,CCR S.A.,🇧🇷 CCR,BR,B3,BRL,Ação
+SBSP3.SA,Sabesp,🇧🇷 Sabesp,BR,B3,BRL,Ação
+CRFB3.SA,Carrefour Brasil,🇧🇷 Carrefour,BR,B3,BRL,Ação
+ASAI3.SA,Assaí,🇧🇷 Assaí,BR,B3,BRL,Ação
+BRFS3.SA,BRF S.A.,🇧🇷 BRF,BR,B3,BRL,Ação
+RAIL3.SA,Rumo S.A.,🇧🇷 Rumo,BR,B3,BRL,Ação
+UGPA3.SA,Ultrapar,🇧🇷 Ultrapar,BR,B3,BRL,Ação
+NTCO3.SA,Natura &Co,🇧🇷 Natura,BR,B3,BRL,Ação
+MULT3.SA,Multiplan,🇧🇷 Multiplan,BR,B3,BRL,Ação
+CYRE3.SA,Cyrela,🇧🇷 Cyrela,BR,B3,BRL,Ação
+EMBR3.SA,Embraer,🇧🇷 Embraer,BR,B3,BRL,Ação
+BTC-USD,Bitcoin,₿ Bitcoin,Global,Crypto,USD,Criptomoeda
+ETH-USD,Ethereum,₿ Ethereum,Global,Crypto,USD,Criptomoeda
+USDT-USD,Tether,₿ Tether,Global,Crypto,USD,Criptomoeda
+BNB-USD,BNB,₿ BNB,Global,Crypto,USD,Criptomoeda
+SOL-USD,Solana,₿ Solana,Global,Crypto,USD,Criptomoeda
+XRP-USD,XRP,₿ XRP,Global,Crypto,USD,Criptomoeda
+USDC-USD,USD Coin,₿ USD Coin,Global,Crypto,USD,Criptomoeda
+ADA-USD,Cardano,₿ Cardano,Global,Crypto,USD,Criptomoeda
+AVAX-USD,Avalanche,₿ Avalanche,Global,Crypto,USD,Criptomoeda
+DOGE-USD,Dogecoin,₿ Dogecoin,Global,Crypto,USD,Criptomoeda
+DOT-USD,Polkadot,₿ Polkadot,Global,Crypto,USD,Criptomoeda
+TRX-USD,TRON,₿ TRON,Global,Crypto,USD,Criptomoeda
+LINK-USD,Chainlink,₿ Chainlink,Global,Crypto,USD,Criptomoeda
+MATIC-USD,Polygon,₿ Polygon,Global,Crypto,USD,Criptomoeda
+SHIB-USD,Shiba Inu,₿ Shiba Inu,Global,Crypto,USD,Criptomoeda
+LTC-USD,Litecoin,₿ Litecoin,Global,Crypto,USD,Criptomoeda
+DAI-USD,Dai,₿ Dai,Global,Crypto,USD,Criptomoeda
+BCH-USD,Bitcoin Cash,₿ Bitcoin Cash,Global,Crypto,USD,Criptomoeda
+UNI-USD,Uniswap,₿ Uniswap,Global,Crypto,USD,Criptomoeda
+ATOM-USD,Cosmos,₿ Cosmos,Global,Crypto,USD,Criptomoeda
+XLM-USD,Stellar,₿ Stellar,Global,Crypto,USD,Criptomoeda
+BRL=X,USD/BRL Exchange,💵 Dólar (BRL),Global,Forex,BRL,Moeda Fiduciária
+EURUSD=X,EUR/USD Exchange,💶 Euro (USD),Global,Forex,USD,Moeda Fiduciária
+EURBRL=X,EUR/BRL Exchange,💶 Euro (BRL),Global,Forex,BRL,Moeda Fiduciária
+GBPUSD=X,GBP/USD Exchange,💷 Libra (USD),Global,Forex,USD,Moeda Fiduciária
+JPY=X,USD/JPY Exchange,💴 Iene (USD),Global,Forex,JPY,Moeda Fiduciária
+CAD=X,USD/CAD Exchange,💵 Dólar Canadense,Global,Forex,CAD,Moeda Fiduciária
+CHF=X,USD/CHF Exchange,💵 Franco Suíço,Global,Forex,CHF,Moeda Fiduciária
+CNY=X,USD/CNY Exchange,💴 Yuan Chinês,Global,Forex,CNY,Moeda Fiduciária
+SPY,SPDR S&P 500 ETF,📈 S&P 500 (ETF),US,NYSE,USD,ETF
+QQQ,Invesco QQQ Trust,📈 NASDAQ 100 (ETF),US,NASDAQ,USD,ETF
+DIA,SPDR Dow Jones,📈 Dow Jones (ETF),US,NYSE,USD,ETF
+EWZ,iShares MSCI Brazil,📈 Ibovespa (EWZ),US,NYSE,USD,ETF
+IVV,iShares Core S&P 500,📈 S&P 500 IVV,US,NYSE,USD,ETF
+GLD,SPDR Gold Trust,🪙 Ouro (ETF),Global,NYSE,USD,ETF
+SLV,iShares Silver Trust,🪙 Prata (ETF),Global,NYSE,USD,ETF

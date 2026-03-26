@@ -1,0 +1,7 @@
+bairro,preco_texto,area_texto,quartos,preco_aluguel,area_m2,preco_por_m2
+Saúde,R$ 3.500 /mês,65 m²,2,3500.0,65.0,53.85
+Saúde,R$ 4.100 /mês,80 m²,3,4100.0,80.0,51.25
+Vila Mariana,R$ 5.200 /mês,70 m²,2,5200.0,70.0,74.29
+Vila Mariana,R$ 6.000 /mês,90 m²,3,6000.0,90.0,66.67
+Planalto Paulista,R$ 4.800 /mês,85 m²,3,4800.0,85.0,56.47
+Planalto Paulista,R$ 3.100 /mês,50 m²,1,3100.0,50.0,62.0
