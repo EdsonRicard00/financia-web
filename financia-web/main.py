@@ -234,10 +234,3 @@ def analise_completa(nome_ativo: str, periodo: str) -> FullAnalysisResponse:
 
 app.mount("/", StaticFiles(directory=BASE_DIR, html=True), name="static")
 
-
-if __name__ == "__main__":
-<<<<<<< HEAD
-    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
-=======
-    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
->>>>>>> 8f7ca18470553ad508d74a709355e195a037717f
