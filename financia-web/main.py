@@ -233,5 +233,3 @@ def analise_completa(nome_ativo: str, periodo: str) -> FullAnalysisResponse:
 
 
 app.mount("/", StaticFiles(directory=BASE_DIR, html=True), name="static")
-
-
